@@ -18,7 +18,7 @@ public class MainTest {
 		//given
 		board.addView();
 		BoardUseCase boardUseCase = (BoardUseCase)Proxy.newProxyInstance(
-			Main.class.getClassLoader(),
+			MainTest.class.getClassLoader(),
 			new Class[] {BoardUseCase.class},
 			new NotifyViewHandler(board)
 		);
