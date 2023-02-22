@@ -1,5 +1,7 @@
 package decorator;
 
 public interface BoardUseCase {
-	void read();
+	String read();
+
+	String write();
 }

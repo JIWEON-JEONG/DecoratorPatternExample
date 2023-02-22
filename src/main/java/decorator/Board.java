@@ -10,9 +10,14 @@ public class Board implements BoardUseCase {
 	}
 
 	@Override
-	public void read() {
+	public String read() {
 		addView();
-		System.out.println("게시물을 읽습니다.");
+		return "게시물을 읽습니다.";
+	}
+
+	@Override
+	public String write() {
+		return "게시물을 작성합니다.";
 	}
 
 	public int readView() {
@@ -22,5 +27,4 @@ public class Board implements BoardUseCase {
 	public void addView() {
 		this.viewCount++;
 	}
-
 }
